@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("../icons/Christmas Icons.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: absolute;
+    background: #0c0c0c;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    user-select: none;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Twinkle Star', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/1.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:255px;
+    width: 255px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+div{
+    font-family: myFirstFont,sans-serif;
+    position: relative;
+    font-size:40px;
+    color: #567D30;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.common{
+    color: #ff0000;
+    font-size:150px;
+    position: absolute;
+}
+
+p{
+    font-family: myFirstFont,sans-serif;
+}
+
+p:nth-child(1){
+    top:27%;
+    left: 59%;
+    animation:animate1 3s linear 1s infinite alternate;
+}
+
+p:nth-child(2){
+    top:27%;
+    left: 32%;
+    animation:animate1 3s linear 1s infinite alternate;
+}
+
+@keyframes animate{
+    from{
+        transform: rotateY(45deg);
+    }
+    to{
+        transform: rotateY(80deg);
+    }
+}
+
+@keyframes animate1{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
